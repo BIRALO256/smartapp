@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:id="@+id/notLayer"
+    tools:context=".TabThings">
+
+    <ImageView
+        android:id="@+id/myNotification"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="15sp"
+        android:src="@drawable/mychat"
+        />
+    <TextView
+        android:id="@+id/changnottext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>

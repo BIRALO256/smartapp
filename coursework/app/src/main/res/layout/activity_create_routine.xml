@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/routineCreation"
+    android:background="@color/title_background_color"
+    tools:context=".CreateRoutine"
+    tools:ignore="MissingDefaultResource">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@color/yellow"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/cancelingButton"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_gravity="start"
+            android:layout_marginRight="15sp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:contentDescription="Editing favorites"
+            android:src="@drawable/cancel_icon"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30sp"
+            android:text="@string/r5"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/saving_button"
+            android:layout_width="40sp"
+            android:layout_height="30sp"
+            android:layout_gravity="end"
+            android:layout_marginRight="15sp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:contentDescription="Editing favorites"
+            android:src="@drawable/check_icon"
+            app:tint="@color/white" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60sp"
+        app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/myHintText"
+                android:visibility="invisible"
+                android:layout_marginLeft="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="18sp"
+                android:text="@string/r14"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/title_background_color"
+                app:boxStrokeWidth="2dp"
+                android:paddingHorizontal="15sp"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/r_text_color">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:hint="@string/r14"
+                    app:hintAnimationEnabled="true"
+                    android:inputType="text"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                   />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:text="@string/r6"
+                android:textSize="28sp" />
+            <RelativeLayout
+                android:id="@+id/changingLayer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/timeDisplayTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:padding="15sp"
+                    android:text="@string/r7"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="15sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r8"
+                    android:textSize="28sp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:backgroundTint="@color/colored_icon_color"
+                    android:src="@drawable/add_sign"
+                    app:fabCustomSize="40sp"
+                    app:maxImageSize="30sp"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:text="@string/r9"
+                android:textSize="28sp" />
+            <RelativeLayout
+                android:id="@+id/changingLayer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/actionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:padding="15sp"
+                    android:text="@string/r10"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="15sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r11"
+                    android:textSize="28sp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:backgroundTint="@color/colored_icon_color"
+                    android:src="@drawable/add_sign"
+                    app:fabCustomSize="40sp"
+                    app:maxImageSize="30sp"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:text="@string/r12"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/myEventConditionView"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:background="@color/background_color"
+                android:gravity="center"
+                android:padding="15sp"
+                android:text="@string/r13"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/layerForConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="15sp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/addConditionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r16"
+                    android:textSize="28sp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:backgroundTint="@color/colored_icon_color"
+                    android:src="@drawable/add_sign"
+                    app:fabCustomSize="40sp"
+                    app:maxImageSize="30sp"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

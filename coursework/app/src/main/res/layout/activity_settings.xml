@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:padding="16dp"/>
+
+    <!-- Theme section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/theme_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"/>
+    <Spinner
+        android:id="@+id/theme_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+
+    <!-- Font section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/font_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"/>
+    <Spinner
+        android:id="@+id/font_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+
+    <!-- Text color section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_color_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"/>
+
+    <!-- User account section -->
+    <com.github.dhaval2404.colorpicker.ColorPickerView
+        android:id="@+id/color_picker_preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_account_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button_label"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account_button_label"
+        android:padding="16dp"/>
+
+    <!-- Save button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button_label"
+        android:padding="16dp"/>
+
+</LinearLayout>

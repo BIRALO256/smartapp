@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">My Smart Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_title">My Smart Home</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="theme_title">Theme</string>
+    <string name="font_title">Font</string>
+    <string name="text_color_title">Text Color</string>
+    <string name="create_account_button_label">Create Account</string>
+    <string name="login_button_label">Login</string>
+    <string name="save_button_label">Save</string>
+    <string name="user_account_title">Emma</string>
+
+<!--    Notification layer text-->
+    <string name="not1">Notification</string>
+    <string name="not2">Send Notification: Welcome to Home</string>
+    <string name="not3">Notification</string>
+
+    <!--    favorite fragment text-->
+    <string name="f1">No Favorites!</string>
+    <string name="f2">Add your favorites routines for easy\n access here.</string>
+    <string name="f3">Tap the \'+\' button below to add your\n favorite routines.</string>
+    <string name="f4">Editing favorites</string>
+    <string name="f5">Star icon for favorites</string>
+    <string name="f6">Floating action button</string>
+
+    <!--    Things fragment texts-->
+    <string name="t1">No Things!</string>
+    <string name="t2">It look like we didn\'t discover any devices.\nTry an option below</string>
+    <string name="t3">Run discovery</string>
+    <string name="t4">Add a cloud account</string>
+    <string name="t5">View our supported devices</string>
+    <string name="t6">Contact support</string>
+    <string name="t7">Select a Thing</string>
+    <string name="t8">Things</string>
+    <string name="t9">Scenes</string>
+    <string name="t10">Routines</string>
+    <string name="t11">Emma</string>
+
+    <!--    Things menu title-->
+    <string name="tm1">Search</string>
+    <string name="tm2">Things menu</string>
+    <!--    Ideas fragment text-->
+    <string name="i1">More Recommendations</string>
+    <string name="i2">Even more recommendations!</string>
+    <string name="i3">Thanksgiving Dinner\nReady\n</string>
+    <string name="i4">Send me a notification</string>
+
+    <!--    Routines fragment text-->
+    <string name="r1">No Routines!</string>
+    <string name="r2">Click the \'+\' button below to get started</string>
+    <string name="r3">Select a Routine</string>
+    <string name="r4">Create a new Routine</string>
+    <string name="r5">Create a Routine</string>
+    <string name="r6">When</string>
+    <string name="r7">Want this routine to run automatically?\nAdd an event below.</string>
+    <string name="r8">Add Event</string>
+    <string name="r9">Run this actions</string>
+    <string name="r10">No actions. Tab below to add one</string>
+    <string name="r11">Add action</string>
+    <string name="r12">But only if</string>
+    <string name="r13">Add an event before adding conditions</string>
+    <string name="r14">Routine Name</string>
+    <string name="r15">Want this routine to run automatically?\nAdd a condition below.</string>
+    <string name="r16">Add Condition</string>
+    <string name="r17">Date &amp; Time</string>
+    <string name="r18">The time is 12:00 AM</string>
+    <string name="r19">Add Condition</string>
+    <string name="r20">Creating new Routine</string>
+    <string name="r21">Greeting</string>
+    <string name="r22">Last seen: Never</string>
+    <string name="r23">Active</string>
+
+    <!--    Settings fragment text-->
+    <string name="s1">User Settings</string>
+    <string name="s2">Moses</string>
+    <string name="s3">kmntanda@gmail.com</string>
+    <string name="s4">Home Settings</string>
+    <string name="s5">Accounts &amp; Hubs</string>
+    <string name="s6">Clients</string>
+    <string name="s7">Locations</string>
+    <string name="s8">Voice</string>
+    <string name="s9">Voice Assistants</string>
+    <string name="s10">App Permissions</string>
+    <string name="s11">Notifications &amp; Permissions</string>
+    <string name="s12"></string>
+
+    <!--    events activity  text-->
+    <string name="e1">Select an Event</string>
+    <string name="e2">The time is Time</string>
+    <string name="e3">It\'s sunset at Location</string>
+    <string name="e4">It\'s sunrise at Location</string>
+    <string name="e5">It\'s 15 minutes before sunrise at Location</string>
+    <string name="e6">It\'s 15 minutes after sunrise at Location</string>
+    <string name="e7">It\'s 15 minutes before sunset at Location</string>
+    <string name="e8">It\'s 15 minutes after sunset at Location</string>
+</resources>
